@@ -169,3 +169,25 @@ main {
 .hidden {
   display: none;
 }
+
+.footer{
+  cursor: pointer;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #bf2e34;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+.footer:hover{
+  font-size: 20px;
+}
+
+
+
+/*  */
+.btn--play-computer {
+  top: 52rem;
+}
