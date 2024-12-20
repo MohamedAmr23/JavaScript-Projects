@@ -113,11 +113,9 @@ main {
   cursor: pointer;
   font-weight: 400;
   transition: all 0.2s;
-
   background-color: white;
   background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
-
   padding: 0.7rem 2.5rem;
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
@@ -137,6 +135,9 @@ main {
 }
 .btn--hold {
   top: 46.1rem;
+}
+.btn--play-computer {
+  top: 52rem;
 }
 
 .btn:active {
@@ -170,7 +171,7 @@ main {
   display: none;
 }
 
-.footer{
+.footer {
   cursor: pointer;
   position: absolute;
   bottom: 0%;
@@ -181,13 +182,104 @@ main {
   letter-spacing: 1px;
   transition: .3s;
 }
-.footer:hover{
+
+.footer:hover {
   font-size: 20px;
 }
 
+/* Mobile Responsive Styles - Only apply below 480px */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
 
+  body {
+    padding: 1rem;
+  }
 
-/*  */
-.btn--play-computer {
-  top: 52rem;
+  main {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .player {
+    padding: 3rem 1rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .score {
+    font-size: 5rem;
+  }
+
+  .current {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .current-label {
+    font-size: 1.4rem;
+  }
+
+  .current-score {
+    font-size: 2.8rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.7rem 1.5rem;
+    white-space: nowrap;
+  }
+
+  .btn::first-letter {
+    font-size: 1.8rem;
+  }
+
+  .dice {
+    height: 8rem;
+    top: 12rem;
+  }
+
+  .btn--new {
+    top: 2rem;
+  }
+  
+  .btn--roll {
+    top: 32rem;
+  }
+  
+  .btn--hold {
+    top: 38rem;
+  }
+  
+  .btn--play-computer {
+    top: 44rem;
+  }
+
+  .footer {
+    bottom: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Landscape mode for mobile */
+@media (max-width: 480px) and (max-height: 450px) {
+  .btn--roll {
+    top: 28rem;
+  }
+  
+  .btn--hold {
+    top: 34rem;
+  }
+  
+  .btn--play-computer {
+    top: 40rem;
+  }
+
+  .dice {
+    top: 10rem;
+  }
 }
